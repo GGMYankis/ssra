@@ -4,7 +4,6 @@ import { useDropzone } from "react-dropzone";
 import { useMutation } from "@apollo/client";
 import { UDPADATE_AVATAR, GET_USER, DELETE_AVATAR } from "../../../gql/user";
 import { Button } from "semantic-ui-react";
-import { toast } from "react-toastify";
 
 function AvatarForm(props) {
   const [loading, setLoadind] = useState(false);
@@ -54,7 +53,7 @@ function AvatarForm(props) {
       const { data } = result;
 
       if (!data.updateAvatar.status) {
-        toast.warning("Error al actualizar el avatar");
+        //toast.warning("Error al actualizar el avatar");
         setLoadind(false);
       } else {
         setLoadind(false);
@@ -78,7 +77,7 @@ function AvatarForm(props) {
 
       const { data } = result;
       if (!data.deleteAvatar) {
-        toast.warning("Error  al borrar el avatar");
+        // toast.warning("Error  al borrar el avatar");
       } else {
         setShowModal(false);
       }
