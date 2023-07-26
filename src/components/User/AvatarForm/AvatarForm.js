@@ -5,6 +5,7 @@ import { useMutation } from "@apollo/client";
 import { UDPADATE_AVATAR, GET_USER, DELETE_AVATAR } from "../../../gql/user";
 import { Button } from "semantic-ui-react";
 
+//hola azure
 function AvatarForm(props) {
   const [loading, setLoadind] = useState(false);
 
