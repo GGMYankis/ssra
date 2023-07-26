@@ -4,7 +4,6 @@ import { useDropzone } from "react-dropzone";
 import { useMutation } from "@apollo/client";
 import { UDPADATE_AVATAR, GET_USER, DELETE_AVATAR } from "../../../gql/user";
 import { Button } from "semantic-ui-react";
-import { toast } from "react-toastify";
 
 function AvatarForm(props) {
   const [loading, setLoadind] = useState(false);
