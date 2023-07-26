@@ -1,0 +1,17 @@
+.feed {
+  height: calc(100vh - 48px);
+  padding-top: 50px;
+}
+
+.feed__box {
+  border: 2px solid gray;
+  margin-bottom: 50px;
+}
+
+.feed__box-user {
+  padding: 15px;
+}
+
+.feed__box-user img {
+  margin-right: 15px !important;
+}
